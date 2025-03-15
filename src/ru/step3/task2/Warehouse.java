@@ -15,5 +15,7 @@ public class Warehouse {
 
         System.out.println("Объем первой коробки: " + box1.getVolume() + " куб.см.");
         System.out.println("Объем первой коробки: " + box2.getVolume() + " куб.см.");
+
+        System.out.println(box1.compare(box2));
     }
 }
