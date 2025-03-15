@@ -13,6 +13,10 @@ public class Warehouse {
         Box box2 = box1.copy();
         box2.getInfo();
 
+        Box box3 = box2.increm();
+
+        box3.getInfo();
+
 
 //        box2.height = 5;
 //        box2.width = 5;
