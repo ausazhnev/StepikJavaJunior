@@ -13,9 +13,13 @@ public class Warehouse {
         box2.width = 5;
         box2.length = 5;
 
+        Box box3 = new Box(box2);
+
         System.out.println("Объем первой коробки: " + box1.getVolume() + " куб.см.");
         System.out.println("Объем первой коробки: " + box2.getVolume() + " куб.см.");
+        System.out.println("Объем первой коробки: " + box3.getVolume() + " куб.см.");
 
         System.out.println(box1.compare(box2));
+        System.out.println(box3.compare(box2));
     }
 }
