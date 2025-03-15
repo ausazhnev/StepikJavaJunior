@@ -33,4 +33,16 @@ public class Box {
             return 0;
         }
     }
+
+    Box copy () {
+        return new Box(this.length, this.width, this.height);
+    }
+
+    void getInfo() {
+        System.out.println("Я коробка!");
+        System.out.println("Моя ширина: " + this.width);
+        System.out.println("Моя длинна: " + this.height);
+        System.out.println("Моя высота: " + this.length);
+        System.out.println("Мой объем: " + this.getVolume() + " куб.см.");
+    }
 }
