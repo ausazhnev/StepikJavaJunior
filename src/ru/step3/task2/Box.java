@@ -15,7 +15,7 @@ public class Box {
         this(10, 10, 10);
     }
 
-    Box (Box newBox) {
+    Box(Box newBox) {
         this(newBox.length, newBox.width, newBox.height);
     }
 
@@ -34,8 +34,12 @@ public class Box {
         }
     }
 
-    Box copy () {
+    Box copy() {
         return new Box(this.length, this.width, this.height);
+    }
+
+    Box increm() {
+        return new Box(this.length * 2, this.width * 2, this.height * 2);
     }
 
     void getInfo() {
