@@ -29,11 +29,19 @@ public class MyMath {
         return num * num * num;
     }
 
-    public static double circleLength (double radius) {
+    public static double circleLength(double radius) {
         return 2 * PI * radius;
     }
 
-    public static double areaCircle (double radius) {
+    public static double areaCircle(double radius) {
         return PI * radius * radius;
+    }
+
+    public static int sum(int... numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum;
     }
 }
