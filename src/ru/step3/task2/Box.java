@@ -1,30 +1,30 @@
 package ru.step3.task2;
 
 public class Box {
-    double length;
-    double width;
-    double height;
+    private double length;
+    private double width;
+    private double height;
 
-    Box(double length, double width, double height) {
+    public Box(double length, double width, double height) {
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
-    Box() {
+    public Box() {
         this(10, 10, 10);
     }
 
-    Box(Box newBox) {
+    public Box(Box newBox) {
         this(newBox.length, newBox.width, newBox.height);
     }
 
-    double getVolume() {
+    public double getVolume() {
         double volume = length * width * height;
         return volume;
     }
 
-    int compare(Box newbox) {
+    public int compare(Box newbox) {
         if (this.getVolume() > newbox.getVolume()) {
             return 1;
         } else if (this.getVolume() < newbox.getVolume()) {
@@ -34,15 +34,15 @@ public class Box {
         }
     }
 
-    Box copy() {
+    public Box copy() {
         return new Box(this.length, this.width, this.height);
     }
 
-    Box increm() {
+    public Box increm() {
         return new Box(this.length * 2, this.width * 2, this.height * 2);
     }
 
-    void getInfo() {
+    public void getInfo() {
         System.out.println("Я коробка!");
         System.out.println("Моя ширина: " + this.width);
         System.out.println("Моя длинна: " + this.height);
