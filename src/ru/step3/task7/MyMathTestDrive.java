@@ -13,5 +13,7 @@ public class MyMathTestDrive {
         System.out.println(MyMath.circleLength(50));
 
         System.out.println(MyMath.areaCircle(52.12));
+
+        System.out.println(MyMath.sum(3, 1, 2, 5, 6, 7));
     }
 }
