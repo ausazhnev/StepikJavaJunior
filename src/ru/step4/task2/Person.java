@@ -14,4 +14,9 @@ public class Person {
         this.age = 0;
     }
 
+    @Override
+    public String toString() {
+
+        return "Меня зовут: " + name + " мне: " + age + " лет";
+    }
 }
