@@ -17,6 +17,7 @@ public class Person {
     @Override
     public String toString() {
 
-        return "Меня зовут: " + name + " мне: " + age + " лет";
+//        return "Меня зовут: " + name + " мне: " + age + " лет";
+        return String.format("Меня зовут: %s мне: %d", this.name, this.age);
     }
 }
